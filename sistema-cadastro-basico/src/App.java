@@ -10,8 +10,11 @@ public class App {
 
     Scanner input = new Scanner(System.in);
 
+    //Utilizando estrutura de loop Do While  + Switch Case para criação do sistema;
+
     do {
 
+    // Criação do Menu Principal
     System.out.println("--------------");
     System.out.println("Menu Principal");
     System.out.println("--------------");
@@ -25,7 +28,11 @@ public class App {
 
     opcao = input.nextInt(); 
       
+    
     switch (opcao) {
+
+    //Criando Menu Aluno;
+
       case 1:
         System.out.println("----------");
         System.out.println("Menu Aluno");
@@ -46,6 +53,8 @@ public class App {
             System.out.println("Opção Inválida!");
         }
         break;
+
+        //Criando Menu Professor;
 
         case 2:
         System.out.println("----------");
@@ -68,6 +77,8 @@ public class App {
         } 
         
         break;
+
+        //Criando Menu Coordenador;
 
         case 3:
         System.out.println("----------");
@@ -94,6 +105,8 @@ public class App {
         System.out.println ("Saindo...");
         break;
 
+    
+    //Default para impedir que números diferentes dos pré-estabelecidos sejam inseridos;
       default: 
         System.out.println("Opção inválida");
     
@@ -101,6 +114,8 @@ public class App {
 
     } while (opcao != 0);
 
+
+    // input.close para fechar o Scanner e liberar os recursos;
     input.close();
 
     }
